@@ -1,0 +1,92 @@
+#gameBoard {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    height: 496px;
+    width: 496px;
+}
+
+#boardNumbers {
+    float: left;
+    height: 496px;
+}
+
+#boardNumbers div {
+    align-items: center;
+    display: flex;
+    height: 62px;
+    justify-content: center;
+    width: 25px;
+}
+
+#boardLetters {
+    clear: both;
+    margin-left: 25px;
+    width: 496px;
+}
+
+#boardLetters div {
+    display: inline-block;
+    margin-top: 2px;
+    text-align: center;
+    width: 58px;
+}
+
+.square {
+    align-items: center;
+    border: solid 1px #333;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 60px;
+}
+
+.square.light {
+    background-color: #f4a460;
+}
+
+.square.dark {
+    background-color: #8b4513;
+}
+
+.square.light.highlight1 {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.square.dark.highlight1 {
+    background-color: #0000ff;
+    color: #999;
+}
+
+.square.highlight1::after {
+    content: "1";
+}
+
+.square.light.highlight2 {
+    background-color: #5656ff;
+    color: #fff;
+}
+
+.square.dark.highlight2 {
+    background-color: #5656ff;
+    color: #000;
+}
+
+.square.highlight2::after {
+    content: "2";
+}
+
+.square.light.highlight3 {
+    background-color: #a4a4f9;
+    color: #fff;
+}
+
+.square.dark.highlight3 {
+    background-color: #a4a4f9;
+    color: #000;
+}
+
+.square.highlight3::after {
+    content: "3";
+}
